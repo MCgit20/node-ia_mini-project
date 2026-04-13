@@ -23,11 +23,11 @@ const PROVIDERS = [
     },
     {
         name: 'HuggingFace',
-        // Utilisation dynamique de la variable du .env 
         url: 'https://router.huggingface.co/v1/chat/completions',
         key: process.env.HF_API_KEY,
-        model: "meta-llama/Llama-3.1-8B-Instruct",
-        format: 'hf'
+        keyType: 'Bearer',
+        format: 'openai',
+        model: 'meta-llama/Llama-3.1-8B-Instruct:novita'
     }
 ];
 
