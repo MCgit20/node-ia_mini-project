@@ -24,9 +24,9 @@ const PROVIDERS = [
     {
         name: 'HuggingFace',
         // Utilisation dynamique de la variable du .env 
-        url: `https://api-inference.huggingface.co/models/${process.env.HF_MODEL_ID}`,
+        url: 'https://router.huggingface.co/v1/chat/completions',
         key: process.env.HF_API_KEY,
-        model: process.env.HF_MODEL_ID,
+        model: "meta-llama/Llama-3.1-8B-Instruct",
         format: 'hf'
     }
 ];
